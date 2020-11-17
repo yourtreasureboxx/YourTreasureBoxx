@@ -64,7 +64,7 @@ nav .icon-burger .line {
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 	nav .links {
 		float: none;
 		position: fixed;
@@ -131,7 +131,7 @@ nav .icon-burger .line {
     background: #ccc;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     .search-container {
       float: none;
       display: inline;
@@ -217,7 +217,7 @@ nav .icon-burger .line {
     margin-top: -10px;
     transition-delay: 0.5s;
   }
-  @media only screen and (max-width:768px) {
+  @media only screen and (max-width:480px) {
     .container {
       width: 500px;
       margin-top: -40px;
@@ -423,7 +423,7 @@ nav .icon-burger .line {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
 	.footer-distributed{
         padding: 30px;
