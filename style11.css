@@ -225,7 +225,7 @@ nav .icon-burger .line {
   }
   .container .card{
     position: relative;
-    max-width: 180px;
+    max-width: 120px;
     height: 150px;
     flex-direction: column;
   }
