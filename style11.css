@@ -226,13 +226,13 @@ nav .icon-burger .line {
   .container .card{
     position: relative;
     max-width: 120px;
-    height: 150px;
+    height: 90px;
     flex-direction: column;
   }
   .container .card .imgbx{
     position: relative;
-    width: 160px;
-    height:180px;
+    width: 100px;
+    height:120px;
   }
   .container .card .imgbx img{
     max-width: 100%; 
