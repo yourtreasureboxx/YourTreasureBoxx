@@ -1,0 +1,454 @@
+body {
+    padding: 0;
+	margin: 0;
+}
+.container1 {
+	position: relative;
+	margin-top: 100px;
+}
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+    top: 0;
+	font-family: 'Montserrat', sans-serif;
+	height: 100px;
+	background-color:rgb(60, 118, 184);
+    width: 100%;;
+}
+.logo1{
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 8px;
+    height:75px;
+    
+  }
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: #f1f1f1;
+	text-decoration: none;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 25px;
+	height: 4px;
+	background-color: #f1f1f1;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 600px) {
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 30PX;
+		right: 30PX;
+		top: 100px;
+        bottom: 100%;
+        margin-bottom: 30px;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0, 0, 0, 0.459);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+        font-size: 20px;
+        color: #f1f1f1;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+    }
+      .logo1{
+        margin-top: 30px;
+        width:50%;
+        height:35px;
+      }
+	
+}
+
+  .search-container input[type=text] {
+    padding: 6px 10px;
+    margin-top: 6px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 6px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .search-container {
+      float: none;
+      display: inline;
+    }
+    a, .search-container input[type=text],.search-container button {
+      float: none;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+    }
+    .search-container input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
+  
+  .container{
+    position: relative;
+    width: 1100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+
+    padding-top: 80px;
+  }
+  .container .card{
+    padding-top:10px;
+    position: relative;
+    max-width: 250px;
+    height: 200px;
+    background: #fff;
+    margin:30px 10px;
+    margin-right: 30px;
+    margin-top:80px;
+    margin-bottom:80px;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
+    border-radius:12px;
+   
+   
+  }
+  h2{
+    text-align:center;
+  }
+  .container .card:hover
+  {
+    height: 280px;
+  }
+  .container .card .imgbx{
+    position: relative;
+    width: 200px;
+    height:220px;
+    top:-60px;
+    margin-right: 10px;
+    margin-left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0,0, 0.2);
+    border-radius: 12px;
+    
+   
+  }
+  .container .card .imgbx img{
+    max-width: 100%; 
+    height:220px;
+    border-radius: 12px;
+  }
+  .container .card .content{
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 15px;
+    text-align:center;
+    color:#111;
+    visibility: hidden;
+    font-size: small;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -10px;
+    transition-delay: 0.5s;
+  }
+  @media only screen and (max-width:600px) {
+    .container {
+      width: 500px;
+      margin-top: -40px;
+      
+  }
+  .container .card{
+    position: relative;
+    max-width: 180px;
+    height: 150px;
+    flex-direction: column;
+  }
+  .container .card .imgbx{
+    position: relative;
+    width: 160px;
+    height:180px;
+  }
+  .container .card .imgbx img{
+    max-width: 100%; 
+    height:180px;
+  }
+  .container .card .content{
+    position: relative;
+    margin-top: -70px;
+    padding: 5px 8px;
+    font-size: 10px;
+}
+.container .card .content h2{
+  font-size: 20px;
+}
+.container .card:hover
+  {
+    height: 250px;
+  }
+}
+  .footer-distributed{
+	background: rgb(60,118,184);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 0px 100px 40px 100px;
+    overflow: hidden;
+    list-style: none;
+}
+/* Footer left */
+
+.footer-distributed .footer-left{
+    margin-top: 50px;
+	float: left;
+}
+.footer-distributed .footer-left .logo1{
+    height:40px;
+    width:20%;
+}
+
+/* The company logo */
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #f1f1f1;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #f1f1f1;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 50px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #f1f1f1;
+    border-radius: 2px;
+    margin-top: -150px;
+	font-size: 20px;
+	color:  rgb(60,118,184);;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    margin-top: -150px;
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #f1f1f1;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #f1f1f1;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+        font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 16px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+    }
+    .footer-distributed .footer-left .logo1{
+        height:40px;
+        width:60%;
+        margin-left:-5px;
+        margin-bottom: 20px;
+    }
+    
+
+}
+
+@media (max-width: 600px) {
+
+	.footer-distributed{
+        padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
