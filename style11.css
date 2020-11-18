@@ -222,19 +222,19 @@ nav .icon-burger .line {
   }
   .container .card{
     position: relative;
-    max-width: 120px;
-	height: 90px;
+    max-width: 150px;
+	height: 120px;
     flex-direction: column;
   }
   .container .card .imgbx{
     position: relative;
-    width: 100px;
-	height:100px;
+    width: 130px;
+	height:130px;
     top:-35px;
   }
   .container .card .imgbx img{
-    width: 100px;
-    height:100px;
+    width: 130px;
+    height:130px;
   }
   .container .card .content{
     position: relative;
@@ -247,7 +247,7 @@ nav .icon-burger .line {
 }
 .container .card:hover
   {
-    height: 180px;
+    height: 200px;
   }
 }
   .footer-distributed{
@@ -397,24 +397,24 @@ nav .icon-burger .line {
 
 	.footer-distributed {
 		width:120%;
-        font: bold 14px sans-serif;
+        font: bold 20px sans-serif;
 	}
 
 	.footer-distributed .footer-company-name{
-		font-size: 16px;
+		font-size: 24px;
 	}
 
 	.footer-distributed form input,
 	.footer-distributed form textarea{
-		width: 250px;
+		width: 300px;
 	}
 
 	.footer-distributed form button{
 		padding: 10px 35px;
     }
     .footer-distributed .footer-left .logo1{
-        height:40px;
-        width:60%;
+        height:55px;
+        width:120%;
         margin-left:-5px;
         margin-bottom: 20px;
     }
@@ -425,7 +425,6 @@ nav .icon-burger .line {
 @media (max-width: 800px) {
 
 	.footer-distributed{
-		padding: 0px 0px 0px 0px;
         padding: 30px;
 	}
 
