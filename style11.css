@@ -159,7 +159,7 @@ nav .icon-burger .line {
   .container .card{
     padding-top:10px;
     position: relative;
-    width: 250px;
+    width: 220px;
     height: 200px;
     background: #fff;
     margin:30px 10px;
@@ -219,6 +219,9 @@ nav .icon-burger .line {
       width: 480px;
       margin-top: -40px;
       
+  }
+  #myCarousel{
+	  width: 120%;
   }
   .container .card{
     position: relative;
