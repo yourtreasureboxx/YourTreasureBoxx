@@ -66,11 +66,10 @@ nav .icon-burger .line {
 }
 @media screen and (max-width: 800px) {
 	nav .links {
-		float: none;
 		position: fixed;
 		z-index: 9;
-		left: 30PX;
-		right: 30PX;
+		left: 30px;
+		right: 30px;
 		top: 100px;
         bottom: 100%;
         margin-bottom: 30px;
@@ -150,18 +149,17 @@ nav .icon-burger .line {
   .container{
     position: relative;
     width: 1100px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
     flex-wrap: wrap;
     padding: 30px;
-
     padding-top: 80px;
   }
   .container .card{
     padding-top:10px;
     position: relative;
-    max-width: 250px;
+    width: 250px;
     height: 200px;
     background: #fff;
     margin:30px 10px;
@@ -172,8 +170,6 @@ nav .icon-burger .line {
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: 0.5s ease-in-out;
     border-radius:12px;
-   
-   
   }
   h2{
     text-align:center;
@@ -196,7 +192,7 @@ nav .icon-burger .line {
    
   }
   .container .card .imgbx img{
-    max-width: 100%; 
+    width: 200px; 
     height:220px;
     border-radius: 12px;
   }
@@ -217,30 +213,32 @@ nav .icon-burger .line {
     margin-top: -10px;
     transition-delay: 0.5s;
   }
+  
   @media only screen and (max-width:800px) {
-    .container {
+  .container {
       width: 480px;
       margin-top: -40px;
       
   }
   .container .card{
     position: relative;
-    max-width: 150px;
-    height: 100px;
+    max-width: 120px;
+	height: 90px;
     flex-direction: column;
   }
   .container .card .imgbx{
     position: relative;
-    width: 130px;
-    height:130px;
+    width: 100px;
+	height:100px;
+    top:-35px;
   }
   .container .card .imgbx img{
-    max-width: 100%; 
-    height:130px;
+    width: 100px;
+    height:100px;
   }
   .container .card .content{
     position: relative;
-    margin-top: -70px;
+	margin-top: -70px;
     padding: 5px 8px;
     font-size: 10px;
 }
@@ -398,6 +396,7 @@ nav .icon-burger .line {
 @media (max-width: 1000px) {
 
 	.footer-distributed {
+		width:120%;
         font: bold 14px sans-serif;
 	}
 
@@ -426,6 +425,7 @@ nav .icon-burger .line {
 @media (max-width: 800px) {
 
 	.footer-distributed{
+		padding: 0px 0px 0px 0px;
         padding: 30px;
 	}
 
@@ -441,12 +441,8 @@ nav .icon-burger .line {
 
 	.footer-distributed form{
 		margin-top: 30px;
-	}
-
-	.footer-distributed form{
 		display: block;
 	}
-
 	.footer-distributed form button{
 		float: none;
 	}
