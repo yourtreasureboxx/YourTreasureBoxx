@@ -72,22 +72,22 @@ nav .icon-burger .line {
 		position: fixed;
 		z-index: 9;
 		left: 30px;
-		right: 30px;
-		top: 100px;
+		right:30px;
+		top: 92px;
         bottom: 100%;
         margin-bottom: 30px;
 		width: auto;
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: rgba(0, 0, 0, 0.459);
+		background-color: rgba(60, 118, 184, 0.198);
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
 	}
 	nav .links a {
         font-size: 20px;
-        color: #f1f1f1;
+        color: #114A8C;
 	}
 	nav :checked ~ .links {
 		bottom: 0;
@@ -140,7 +140,6 @@ nav .icon-burger .line {
     }
     a, .search-container input[type=text],.search-container button {
       float: none;
-      text-align: left;
       width: 100%;
       margin: 0;
     }
@@ -482,13 +481,11 @@ nav .icon-burger .line {
 	border:none;
 	box-shadow: none;
 	width: 130px;
-	height: 40px;
 	line-height: 42px;
 	-webkit-perspective: 230px;
 	perspective: 230px;
 	border-radius: 3px;
 	background-color:  #50739D;
-	padding: 15px 20px;
 	font-weight: bold;
 	float: right;
   }
@@ -571,11 +568,13 @@ nav .icon-burger .line {
 	}
 
 	.footer-distributed form button{
-		padding: 10px 35px;
+		padding: 1px 3px;
+		margin-left:20px;
     }
     .footer-distributed .footer-left .logo1{
         height:55px;
-        width:120%;
+		width:120%;
+		margin-top:20px;
         margin-left:-5px;
         margin-bottom: 20px;
     }
