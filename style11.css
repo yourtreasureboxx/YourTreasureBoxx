@@ -219,32 +219,35 @@ nav .icon-burger .line {
   @media only screen and (max-width:600px) {
   .container {
 	  width: 100%;
-	  margin-right:-40px;
       margin-top: -40px;
       
   }
   #myCarousel{
 	  margin-top:-50px;
+
   }
   .container .card{
     position: relative;
-    max-width: 150px;
+    max-width: 120px;
 	height: 120px;
     flex-direction: column;
   }
   .container .card .imgbx{
     position: relative;
-    width: 130px;
+    width: 100px;
 	height:130px;
-    top:-35px;
+	top:-35px;
+	
+    margin-right: 5px;
+    margin-left: 5px;
   }
   .container .card .imgbx img{
-    width: 130px;
+    width: 110px;
     height:130px;
   }
   .container .card .content{
     position: relative;
-	margin-top: -70px;
+	margin-top: -90px;
     padding: 5px 8px;
     font-size: 10px;
 }
@@ -253,7 +256,7 @@ nav .icon-burger .line {
 }
 .container .card:hover
   {
-    height: 200px;
+    height: 180px;
   }
 }
   .footer-distributed{
@@ -571,8 +574,8 @@ nav .icon-burger .line {
 		margin-left:20px;
     }
     .footer-distributed .footer-left .logo1{
-        height:55px;
-		width:120%;
+        height:45px;
+		width:100%;
 		margin-top:20px;
         margin-left:-5px;
         margin-bottom: 20px;
