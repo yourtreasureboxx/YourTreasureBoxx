@@ -64,7 +64,7 @@ nav .icon-burger .line {
 	border-radius: 3px;
 	transition: all .3s ease-in-out;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 	nav {
 		height:50px;
 	}
@@ -133,7 +133,7 @@ nav .icon-burger .line {
     background: #ccc;
   }
   
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
     .search-container {
       float: none;
       display: inline;
@@ -216,9 +216,10 @@ nav .icon-burger .line {
     transition-delay: 0.5s;
   }
   
-  @media only screen and (max-width:800px) {
+  @media only screen and (max-width:600px) {
   .container {
-      width: 100%;
+	  width: 100%;
+	  margin-right:-40px;
       margin-top: -40px;
       
   }
@@ -548,7 +549,7 @@ nav .icon-burger .line {
   
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
 
 	.footer-distributed {
         font: bold 20px sans-serif;
