@@ -150,7 +150,7 @@ nav .icon-burger .line {
   
   .container{
     position: relative;
-    width: 1100px;
+    width: 100%;
 	display:flex;
 	align-items: center;
 	justify-content: center;
@@ -218,13 +218,12 @@ nav .icon-burger .line {
   
   @media only screen and (max-width:800px) {
   .container {
-      width: 480px;
+      width: 100%;
       margin-top: -40px;
       
   }
   #myCarousel{
 	  margin-top:-50px;
-	  width: 120%;
   }
   .container .card{
     position: relative;
@@ -552,7 +551,6 @@ nav .icon-burger .line {
 @media (max-width: 1000px) {
 
 	.footer-distributed {
-		width:120%;
         font: bold 20px sans-serif;
 	}
 	.footer-distributed .footer-left{
